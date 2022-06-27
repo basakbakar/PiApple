@@ -1,0 +1,20 @@
+<!-- Diğer component'lerde kullanılmak üzere backend'ten çekilen bilgilerin tanımlandığı kısım -->
+<div *ngIf="Employee.length !== 0">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">User Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Tanitim</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of Employee">
+        <td>{{ employee.res_id }}</td>
+        <td>{{ employee.res_name }}</td>
+        <td>{{ employee.res_tanitim }}</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

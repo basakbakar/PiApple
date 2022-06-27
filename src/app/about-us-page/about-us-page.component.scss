@@ -1,0 +1,158 @@
+// * {
+//     margin: 0;
+//     padding: 0;
+// }
+
+// body {
+//     background: #ddd;
+// }
+
+// .container {
+//     margin: auto;
+//     margin-bottom: 1%;
+// }
+
+// #escape {
+//     margin-bottom: 50px;
+// }
+
+// .about-1 {
+//     margin: 30px;
+//     padding: 5px;
+// }
+
+// .about-1 h1 {
+//     text-align: center;
+//     color: #000;
+//     font-weight: bold;
+// }
+
+// .about-1 p {
+//     text-align: center;
+//     padding: 3px;
+//     color: #000;
+// }
+
+// .about-item {
+//     margin: 20px;
+//     background: #fff;
+//     padding: 80px 30px;
+//     box-shadow: 0 0 9px rgba(0, 0, 0, .6);
+// }
+
+// .about-item i {
+//     font-size: 48px;
+//     margin: 0;
+// }
+
+// .about-item h3 {
+//     font-size: 26px;
+//     margin-bottom: 10px;
+// }
+
+// .about-item hr {
+//     width: 96px;
+//     height: 6px;
+//     background: rgb(255, 123, 0);
+//     margin: 0 auto;
+//     border: none;
+// }
+
+// .about-item p {
+//     margin-top: 20px;
+// }
+
+// .about-item:hover {
+//     background: rgb(0, 123, 255);
+// }
+
+// .about-item:hover i, .about-item:hover h3, .about-item:hover p {
+//     color: #fff;
+// }
+
+// .about-item:hover hr {
+//     background: #fff;
+// }
+
+// .about-item:hover i {
+//     transform: translateY(-20px);
+// }
+
+// .about-item:hover i, .about-item:hover h3, .about-item:hover hr {
+//     transition: all 400ms ease-in-out;
+// }
+
+$color_1: #000;
+$color_2: #fff;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #ddd;
+}
+.container {
+	margin: auto;
+	margin-bottom: 1%;
+}
+#escape {
+	margin-bottom: 50px;
+}
+.about-1 {
+	margin: 30px;
+	padding: 5px;
+	h1 {
+		text-align: center;
+		color: $color_1;
+		font-weight: bold;
+	}
+	p {
+		text-align: center;
+		padding: 3px;
+		color: $color_1;
+	}
+}
+.about-item {
+	margin: 20px;
+	background: #fff;
+	padding: 80px 30px;
+	box-shadow: 0 0 9px rgba(0, 0, 0, .6);
+	i {
+		font-size: 48px;
+		margin: 0;
+	}
+	h3 {
+		font-size: 26px;
+		margin-bottom: 10px;
+	}
+	hr {
+		width: 96px;
+		height: 6px;
+		background: rgb(255, 123, 0);
+		margin: 0 auto;
+		border: none;
+	}
+	p {
+		margin-top: 20px;
+	}
+	&:hover {
+		background: rgb(0, 123, 255);
+		i {
+			color: $color_2;
+			transform: translateY(-20px);
+			transition: all 400ms ease-in-out;
+		}
+		h3 {
+			color: $color_2;
+			transition: all 400ms ease-in-out;
+		}
+		p {
+			color: $color_2;
+		}
+		hr {
+			background: #fff;
+			transition: all 400ms ease-in-out;
+		}
+	}
+}

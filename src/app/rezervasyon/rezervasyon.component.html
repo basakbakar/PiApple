@@ -1,0 +1,50 @@
+<!-- Bu kısımda kullanıcının seçtiği restoran için rezervasyon yaptığı form bulunur. Kullanıcı formu doldurduktan sonra butona bastığında bilgilerin veritabanın girmesi planlanır. -->
+<div  *ngIf="Orders.length !== 0" class="restaurantBox" >
+<div *ngFor="let order of Orders">
+  <p>{{ order.username }}</p>
+  <p>{{ order.usersurname}}</p>
+</div>
+</div>
+<div class="login-box">
+    <h2>Rezervasyon</h2>
+    <form>
+      <div class="user-box">
+        <input type="text" name="username" required="">
+        <label>Adınız</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="usersurname" required="">
+        <label>Soyadınız</label>
+      </div>
+      <div class="user-box">
+        <input type="email" name="useremail" required="">
+        <label>E-Mail</label>
+      </div>
+      <div class="user-box">
+        <input type="date" id="start" name="ordertime"
+       value="2022-06-23"
+       min="2022-06-23" max="2022-06-30">
+        <label>Tarih</label>
+      </div>
+      <div class="user-box">
+        <select class="form-select__select">
+            <option selected disabled>Saat seçiniz</option>
+            <option>10.00</option>
+            <option>11.00</option>
+            <option>12.00</option>
+            <option>13.00</option>
+            <option>14.00</option>
+            <option>15.00</option>
+            <option>16.00</option>
+            <option>17.00</option>
+          </select>
+      </div>
+      <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Rezervasyon Yap
+      </a>
+    </form>
+  </div>

@@ -1,0 +1,114 @@
+
+ html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 40px;
+  }
+  .detailsBtn {
+    width: 100%;
+
+  }
+  
+  .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background: fixed center top #ddd;
+  }
+  .leftSide {
+      width: 800px;
+  }
+  .textBox {
+      margin-top: -3em;
+      margin-left: 4em;
+  }
+  .rightSide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 800px;
+  }
+  .restaurantImg {
+      margin: 40px 20px 80px 80px;
+      width: 600px;
+      height: 400px;
+  }
+  .restaurantImg img {
+      width: 100%;
+      height: 100%;
+  }
+  .imageBox{
+      height: 300px;
+      width: 600px;
+      display: flex;
+      flex-direction: row;
+  }
+  .descBox {
+      width: 600px;
+      height: 100%;
+      margin-top: 40px;
+  }
+  .menuBox {
+      width: 200px;
+      height: 200px;
+      margin: 40px 10px 10px 10px ;
+  }
+  
+  .menuImg {
+      object-fit: cover;
+      height: 180px;
+  }
+  
+  
+  .bdge {
+    height: 21px;
+    background-color: orange;
+    color: #fff;
+    font-size: 11px;
+    padding: 8px;
+    border-radius: 4px;
+    line-height: 3px;
+  }
+  
+  .comments {
+    text-decoration: underline;
+    text-underline-position: under;
+    cursor: pointer;
+  }
+  
+  .dot {
+    height: 7px;
+    width: 7px;
+    margin-top: 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .hit-voting:hover {
+    color: blue;
+  }
+  
+  .hit-voting {
+    cursor: pointer;
+  }
+  
+ 
+  .buttonComment {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

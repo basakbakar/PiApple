@@ -1,0 +1,41 @@
+// footer {
+//     background-color: #222;
+//     color: #fff;
+//     font-size: 14px;
+//     bottom: 0;
+//     position: fixed;
+//     left: 0;
+//     right: 0;
+//     text-align: center;
+//     z-index: 999;
+// }
+
+// footer p {
+//     margin: 10px 0;
+// }
+
+// footer i {
+//     color: red;
+// }
+
+$color_1: #fff;
+$color_2: red;
+$background-color_1: #222;
+
+footer {
+	background-color: $background-color_1;
+	color: $color_1;
+	font-size: 14px;
+	bottom: 0;
+	position: relative;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 999;
+	p {
+		margin: auto;
+	}
+	i {
+		color: $color_2;
+	}
+}
